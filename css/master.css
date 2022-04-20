@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225,100%,94%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    object-fit: cover;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.625rem;
+    box-shadow: 0 6px 30px -15px hsl(224deg 23% 55%);
+}
+.container .music {
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 1.625rem;
+    border-top-right-radius: 1.625rem;
+}
+.container h1 {
+    margin: 30px auto 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.container .paragraph {
+    text-align: center;
+    margin: 10px 25px;
+    font-size: 16px;
+    padding: 0px 15px;
+    color: hsl(224, 23%, 55%);
+}
+.container .music-order {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 35px;
+    border-radius: .625rem;
+}
+.container .music-order .icon-music {
+    width: 12%;
+    height: 33px;
+}
+.container .music-order .price {
+    width: 50%;
+    margin-left: -15px;
+}
+.container .music-order .price span {
+    color: hsl(224, 23%, 55%);
+}
+.container .music-order a {
+    margin-left: 35px;
+    color: hsl(245, 75%, 52%);
+}
+.container .music-order a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.7)
+}
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.btn {
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: .525rem;
+    box-shadow: 0 4px 10px 0 rgb(160 160 160);
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+.cancel {
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;  
+    margin: 10px; 
+}
+.cancel:hover {
+    cursor: pointer;
+    color: #000;
+}
